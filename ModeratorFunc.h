@@ -15,11 +15,11 @@ void DeleteBookPlusCopies() {
 	std::cout << "Enter the title of the book you want to delete: " << std::endl;
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
 	getline(std::cin, BookTitle); 
-	BookTitle = StringConvert(BookTitle); // Convert the title to lower case and remove spaces
+	BookTitle = StringConvert(BookTitle); // Convert the title to lower letters and remove spaces
 
 	std::cout << "Enter author of the book: " << std::endl;
 	getline(std::cin, BookAuthor);
-	BookAuthor = StringConvert(BookAuthor); // Convert the author name to lower case and remove spaces
+	BookAuthor = StringConvert(BookAuthor); // Convert the author name to lower letters and remove spaces
 
 	bool bookFound = false;
 	for (auto iterator = AvailableBooksOBJ.Books.begin(); iterator != AvailableBooksOBJ.Books.end(); ) {
