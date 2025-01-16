@@ -35,9 +35,10 @@ void ModeratorUI() {
 
 		switch (choice) {
 		default:
-			std::cout << "Invalid option! Select a valid option! (1, 2, 3, 4, 5, 6) " << std::endl;
-			std::cin.clear();
-			break;
+                	std::cin.clear();
+                	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                	std::cout << "Invalid option! Please select a valid option. (1, 2, 3, 4)" << std::endl;
+                	return;
 
 		case 1:
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
