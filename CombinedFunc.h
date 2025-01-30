@@ -4,6 +4,7 @@
 #include "HelpfulFunc.h"
 
 #include <iostream>
+#include <limits>
 // The following 4 subfunctionsare subfunctions in the both functions UserUI() and ModeratorUI()
 
 // 1. Subfunction to search a book by title
