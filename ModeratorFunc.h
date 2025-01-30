@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <limits>
 
 
 // function to delete a book with all copies and remove it from the list
